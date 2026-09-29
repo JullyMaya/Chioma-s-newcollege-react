@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.campus {
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+}
+.campus h1 {
+font-size: 36px;
+font-weight: 600;
+}
+.campus > p {
+color: #777;
+margin-top: 10px;
+}
+.campus-col {
+flex-basis: 32%;
+background: #fff3f3;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+}
+
+.campus-col img {
+width: 100%;
+display: block;
+}
+
+.campus-col h3 {
+text-align: center;
+font-weight: 600;
+margin: 10px 0;
+}
+
+.campus-col p {
+color: #777;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+padding: 10px 0;
+}
+
+/* Campus image overlay */
+
+.layer {
+background: transparent;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: 0.5s;
+}
+
+.layer:hover {
+background: rgba(226, 0, 0, 0.3);
+}
+.layer h3 {
+width: 100%;
+font-weight: 500;
+color: #fff;
+font-size: 26px;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+transition: 0.5s;
+opacity: 0;
+}
+
+.layer:hover h3 {
+bottom: 49%;
+opacity: 1;
+}
