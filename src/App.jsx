@@ -11,10 +11,10 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<LandingPageScreen />} />
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/courses" element={<div>Courses Page</div>} />
-        <Route path="/blog" element={<div>Blog Page</div>} />
-        <Route path="/contact" element={<div>Contact Page</div>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/course" element={<Course/>} />
+        <Route path="/Home" element={<Home/>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
   );
 };
