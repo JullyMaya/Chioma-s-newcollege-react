@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Course.css";
 
 const Course = () => {
@@ -126,9 +127,10 @@ const Course = () => {
             academic and career goals.
           </p>
 
-          <button className="cta-button">
-            Apply Now
-          </button>
+          <Link to="/apply" className="hero-btn">
+  APPLY NOW
+</Link>
+
         </div>
       </section>
 
