@@ -1,0 +1,426 @@
+/* =====================================
+   APPLY PAGE
+===================================== */
+
+.apply-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f5f8fc;
+  color: #172b4d;
+
+  overflow-x: hidden;
+}
+
+.apply-page *,
+.apply-page *::before,
+.apply-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.apply-hero {
+  width: 100%;
+  min-height: 430px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 20px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(8, 35, 70, 0.88),
+      rgba(8, 35, 70, 0.88)
+    ),
+    url("/images/background.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.apply-hero-content {
+  width: 100%;
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+}
+
+.apply-hero-content span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #f5b642;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.apply-hero h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2.3rem, 7vw, 4.2rem);
+
+  line-height: 1.1;
+}
+
+.apply-hero p {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #dce7f5;
+
+  font-size: clamp(14px, 2vw, 17px);
+
+  line-height: 1.8;
+}
+
+
+/* =====================================
+   APPLICATION SECTION
+===================================== */
+
+.application-section {
+  width: calc(100% - 30px);
+  max-width: 1000px;
+
+  margin: 80px auto;
+}
+
+.application-header {
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.application-header span {
+  color: #e4a51b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.application-header h2 {
+  margin: 12px 0;
+
+  color: #12365f;
+
+  font-size: clamp(2rem, 5vw, 2.8rem);
+
+  line-height: 1.2;
+}
+
+.application-header p {
+  margin: 0;
+
+  color: #697386;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.application-form {
+  width: 100%;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 40px rgba(20, 50, 90, 0.08);
+}
+
+.form-section {
+  width: 100%;
+
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  margin: 0 0 20px;
+
+  color: #143b6c;
+
+  font-size: 21px;
+}
+
+
+/* =====================================
+   FORM GRID
+===================================== */
+
+.form-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =====================================
+   FORM GROUP
+===================================== */
+
+.form-group {
+  width: 100%;
+  min-width: 0;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 13px;
+
+  border: 1px solid #d5dce5;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #172b4d;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2468a9;
+
+  box-shadow:
+    0 0 0 3px rgba(36, 104, 169, 0.1);
+}
+
+.form-group textarea {
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.apply-submit {
+  display: block;
+
+  width: 100%;
+
+  padding: 15px 20px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #123f73;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.apply-submit:hover {
+  background: #f2ad27;
+
+  color: #142d4f;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+  .apply-hero {
+    min-height: 380px;
+
+    padding: 65px 20px;
+  }
+
+  .application-section {
+    width: calc(100% - 30px);
+
+    margin: 60px auto;
+  }
+
+  .application-form {
+    padding: 30px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media screen and (max-width: 480px) {
+
+  .apply-hero {
+    min-height: 350px;
+
+    padding: 55px 16px;
+  }
+
+  .apply-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .apply-hero p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .application-section {
+    width: calc(100% - 24px);
+
+    margin: 45px auto;
+  }
+
+  .application-header {
+    margin-bottom: 30px;
+  }
+
+  .application-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .application-header p {
+    font-size: 14px;
+  }
+
+  .application-form {
+    padding: 22px 16px;
+
+    border-radius: 10px;
+  }
+
+  .form-section {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+
+  .form-section h3 {
+    font-size: 19px;
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 17px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 14px;
+  }
+
+  .apply-submit {
+    padding: 14px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* =====================================
+   VERY SMALL PHONES
+===================================== */
+
+@media screen and (max-width: 360px) {
+
+  .apply-hero {
+    padding: 45px 12px;
+  }
+
+  .apply-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .application-section {
+    width: calc(100% - 16px);
+  }
+
+  .application-form {
+    padding: 18px 12px;
+  }
+
+}

@@ -5,6 +5,11 @@ import About from "./Pages/About"
 import Course from "./Pages/Course"
 import Contact from "./Pages/Contact"
 import Home from "./Pages/Home"
+import Admissions from "./Pages/Admissions";
+import ApplyNow from "./Pages/ApplyNow";
+
+
+
 
 const App = () => {
   return (
@@ -12,9 +17,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPageScreen />} />
         <Route path="/about" element={<About/>} />
-        <Route path="/course" element={<Course/>} />
+        <Route path="/courses" element={<Course/>} />
         <Route path="/Home" element={<Home/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admissions" element={<Admissions />} />
+        <Route path="/apply" element={<ApplyNow />} />
+
       </Routes>
   );
 };
